@@ -33,6 +33,10 @@ build/
 ### maven ###
 mvnw
 mvnw.cmd
+.mvn
 
 ### .DS_Store ###
 *.DS_Store
+
+### log ###
+log
