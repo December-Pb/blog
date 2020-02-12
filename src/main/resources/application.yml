@@ -1,0 +1,10 @@
+spring:
+  thymeleaf:
+    mode: HTML
+
+  profiles:
+    active: dev
+#  autoconfigure:
+#    exclude:
+#      - org.springframework.boot.autoconfigure.web.servlet.WebMvcAutoConfiguration
+#     exclude 这个会屏蔽自定义异常处理
