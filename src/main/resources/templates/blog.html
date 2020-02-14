@@ -8,15 +8,15 @@
     <link rel="stylesheet" href="../static/css/me.css">
 </head>
 <body>
-<nav class="ui inverted attached segment m-padded-tb-mini">
+<nav class="ui inverted attached segment m-padded-tb-mini m-shadow-small">
     <div class="ui container">
         <div class="ui inverted secondary stackable menu">
             <h2 class="ui teal header item">Blog</h2>
-            <a href="#" class="m-item item m-mobile-hide"><i class="home icon"></i>首页</a>
-            <a href="#" class="m-item item m-mobile-hide"><i class="idea icon"></i>分类</a>
-            <a href="#" class="m-item item m-mobile-hide"><i class="tags icon"></i>标签</a>
-            <a href="#" class="m-item item m-mobile-hide"><i class="clone icon"></i>归档</a>
-            <a href="#" class="m-item item m-mobile-hide"><i class="info icon"></i>关于我</a>
+            <a href="#" class="m-item item m-mobile-hide"><i class="home icon"></i>Home</a>
+            <a href="#" class="m-item item m-mobile-hide"><i class="idea icon"></i>Classification</a>
+            <a href="#" class="m-item item m-mobile-hide"><i class="tags icon"></i>Tag</a>
+            <a href="#" class="m-item item m-mobile-hide"><i class="clone icon"></i>Archive</a>
+            <a href="#" class="m-item item m-mobile-hide"><i class="info icon"></i>About Me</a>
             <div class="right item">
                 <div class="ui icon inverted transparent input m-margin-tb-tiny">
                     <input type="text" placeholder="Search....">
@@ -54,8 +54,21 @@
                 <div class="ui right aligned basic segment">
                     <div class="ui orange basic label">Original</div>
                 </div>
-                <h2 class="ui center aligned head">这是一句无用的话</h2>
-                <div id="content" class="m-padded-lr-responsive"></div>
+                <h2 class="ui center aligned head">What is Lorem Ipsum?</h2>
+                <div id="content" class="m-padded-lr-responsive">
+                    <p>Contrary to popular belief, Lorem Ipsum is not simply random text.
+                        It has roots in a piece of classical Latin literature from 45 BC,
+                        making it over 2000 years old. Richard McClintock, a Latin
+                        professor at Hampden-Sydney College in Virginia, looked up one
+                        of the more obscure Latin words, consectetur, from a Lorem
+                        Ipsum passage, and going through the cites of the word in
+                        classical literature, discovered the undoubtable source. Lorem
+                        Ipsum comes from sections 1.10.32 and 1.10.33 of "de Finibus
+                        Bonorum et Malorum" (The Extremes of Good and Evil) by Cicero,
+                        written in 45 BC. This book is a treatise on the theory of ethics,
+                        very popular during the Renaissance. The first line of Lorem Ipsum,
+                        "Lorem ipsum dolor sit amet..", comes from a line in section 1.10.32.</p>
+                </div>
                 <!--tag-->
                 <div class="m-padded-lr-responsive">
                     <div class="ui basic teal left pointing label">Methodology</div>
@@ -76,10 +89,123 @@
                 </div>
             </div>
             <div class="ui attached positive message">
-                Blog Info
+            <!--Blog Info-->
+                <div class="ui middle aligned grid">
+                    <div class="eleven wide column">
+                        <ui class="list">
+                            <li>Author: Jiaqian Sun</li>
+                            <li>Time: 2020-02-02</li>
+                            <li>This is a meaningless sentence</li>
+                            <li>This is a meaningless sentence</li>
+                        </ui>
+                    </div>
+                    <div class="five wide column">
+                        <img src="../static/images/wechat.jpg" alt="" class="ui right floated rounded bordered image" style="width: 110px">
+                    </div>
+                </div>
             </div>
             <div class="ui bottom attached segment">
-                Comment
+                <!--Comment-->
+                <div class="ui teal segment">
+                    <div class="ui threaded comments">
+                        <h3 class="ui dividing header">Comments</h3>
+                        <div class="comment">
+                            <a class="avatar">
+                                <img src="../static/images/avatar.png" alt="">
+                            </a>
+                            <div class="content">
+                                <a class="author">Matt</a>
+                                <div class="metadata">
+                                    <span class="date">Today at 5:42PM</span>
+                                </div>
+                                <div class="text">
+                                    How artistic!
+                                </div>
+                                <div class="actions">
+                                    <a class="reply">Reply</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="comment">
+                            <a class="avatar">
+                                <img src="../static/images/avatar.png" alt="">
+                            </a>
+                            <div class="content">
+                                <a class="author">Elliot Fu</a>
+                                <div class="metadata">
+                                    <span class="date">Yesterday at 12:30AM</span>
+                                </div>
+                                <div class="text">
+                                    <p>This has been very useful for my research. Thanks as well!</p>
+                                </div>
+                                <div class="actions">
+                                    <a class="reply">Reply</a>
+                                </div>
+                            </div>
+                            <div class="comments">
+                                <div class="comment">
+                                    <a class="avatar">
+                                        <img src="../static/images/avatar.png" alt="">
+                                    </a>
+                                    <div class="content">
+                                        <a class="author">Jenny Hess</a>
+                                        <div class="metadata">
+                                            <span class="date">Just now</span>
+                                        </div>
+                                        <div class="text">
+                                            Elliot you are always so right :)
+                                        </div>
+                                        <div class="actions">
+                                            <a class="reply">Reply</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="comment">
+                            <a class="avatar">
+                                <img src="../static/images/avatar.png" alt="">
+                            </a>
+                            <div class="content">
+                                <a class="author">Joe Henderson</a>
+                                <div class="metadata">
+                                    <span class="date">5 days ago</span>
+                                </div>
+                                <div class="text">
+                                    Dude, this is awesome. Thanks so much
+                                </div>
+                                <div class="actions">
+                                    <a class="reply">Reply</a>
+                                </div>
+                            </div>
+                        </div>
+                        <form class="ui reply form">
+                            <div class="field m-mobile-wide">
+                                <label>
+                                    <textarea name="content"></textarea>
+                                </label>
+                            </div>
+                            <div class="fields">
+                                <div class="field m-mobile-wide m-margin-bottom-small">
+                                    <div class="ui left icon input">
+                                        <i class="user icon"></i><input type="text" name="nickname" placeholder="Name">
+                                    </div>
+                                </div>
+                                <div class="field m-mobile-wide m-margin-bottom-small">
+                                    <div class="ui left icon input">
+                                        <i class="mail icon"></i>
+                                            <input type="text" name="email" placeholder="email">
+                                    </div>
+                                </div>
+                                <div class="field m-margin-bottom-small m-mobile-wide">
+                                    <button class="ui blue labeled submit icon button m-mobile-wide m-margin-bottom-small">
+                                        <i class="icon edit"></i> Add Reply
+                                    </button>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                </div>
             </div>
         </div>
 
@@ -97,27 +223,27 @@
                 </div>
             </div>
             <div class="three wide column">
-                <h4 class="ui inverted header">最新博客</h4>
+                <h4 class="ui inverted header">Latest Blog</h4>
                 <div class="ui inverted link list">
-                    <a href="#" class="item">用户故事（User Story）</a>
-                    <a href="#" class="item">用户故事（User Story）</a>
-                    <a href="#" class="item">用户故事（User Story）</a>
-                    <a href="#" class="item">用户故事（User Story）</a>
+                    <a href="#" class="item">User Story</a>
+                    <a href="#" class="item">User Story</a>
+                    <a href="#" class="item">User Story</a>
+                    <a href="#" class="item">User Story</a>
                 </div>
             </div>
             <div class="three wide column">
-                <h4 class="ui inverted header">最新博客</h4>
+                <h4 class="ui inverted header">Latest Blog</h4>
                 <div class="ui inverted link list">
-                    <a href="#" class="item">用户故事（User Story）</a>
-                    <a href="#" class="item">用户故事（User Story）</a>
-                    <a href="#" class="item">用户故事（User Story）</a>
-                    <a href="#" class="item">用户故事（User Story）</a>
+                    <a href="#" class="item">User Story</a>
+                    <a href="#" class="item">User Story</a>
+                    <a href="#" class="item">User Story</a>
+                    <a href="#" class="item">User Story</a>
                 </div>
             </div>
             <div class="seven wide column">
-                <h4 class="ui inverted header">最新博客</h4>
+                <h4 class="ui inverted header">Latest Blog</h4>
                 <p>
-                    这是我的个人博客，会分享编程的有关内容
+                    This is my personal blog
                 </p>
             </div>
         </div>
