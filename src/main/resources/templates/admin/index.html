@@ -1,11 +1,11 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" xmlns:th="http://www.w3.org/1999/xhtml">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Backend</title>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/semantic-ui/2.2.4/semantic.min.css">
-    <link rel="stylesheet" href="/css/me.css">
+    <link rel="stylesheet" href="../../static/css/me.css" th:href="@{/css/me.css}">
 </head>
 <body>
 <nav class="ui inverted attached segment m-padded-tb-mini m-shadow-small">
@@ -43,69 +43,11 @@
 
 <div class="m-padded-tb-big m-container-small">
     <div class="ui container">
-        <form action="#" method="post" class="ui segment form">
-            <div class="inline fields">
-                <div class="field">
-                    <input type="text" name="title" placeholder="Title">
-                </div>
-                <div class="field">
-                    <div class="ui selection dropdown">
-                        <input type="hidden" name="type">
-                        <i class="dropdown icon"></i>
-                        <div class="default text">Category</div>
-                        <div class="menu">
-                            <div class="item" data-value="1">Error Log</div>
-                            <div class="item" data-value="2">Developer Handbook</div>
-                        </div>
-                    </div>
-                </div>
-                <div class="field">
-                    <div class="ui checkbox">
-                        <input type="checkbox" id="recommend" name="recommend">
-                        <label for="recommend">Recommend</label>
-                    </div>
-                </div>
-                <div class="field">
-                    <button class="ui teal basic button"><i class="search icon"></i>Research</button>
-                </div>
-            </div>
-        </form>
-        <table class="ui table">
-            <thead>
-            <tr>
-                <th></th>
-                <th>Title</th>
-                <th>Category</th>
-                <th>Recommend</th>
-                <th>Update Time</th>
-                <th>Option</th>
-            </tr>
-            </thead>
-            <tbody>
-            <tr>
-                <td>1</td>
-                <td>刻意练习清单刻意练习清单</td>
-                <td>认知升级</td>
-                <td>是</td>
-                <td>2020-02-02</td>
-                <td>
-                    <a href="#" class="ui mini teal basic button">Edit</a>
-                    <a href="#" class="ui mini red basic button">Delete</a>
-                </td>
-            </tr>
-            </tbody>
-            <tfoot>
-            <tr>
-                <th colspan="6">
-                    <div class="ui mini pagination menu">
-                        <a class="item">Before</a>
-                        <a class="item">Next</a>
-                    </div>
-                    <a href="#" class="ui mini right floated teal basic button">New</a>
-                </th>
-            </tr>
-            </tfoot>
-        </table>
+        <div class="ui success large message">
+            <h3>Hi</h3>
+            <p>Jiaqian Sun Welcome</p>
+        </div>
+        <img src="https://unsplash.it/1000/400?image=1011" alt="" class="ui rounded bordered fluid image">
     </div>
 </div>
 
@@ -115,7 +57,7 @@
             <div class="three wide column">
                 <div class="ui inverted link list">
                     <div class="item">
-                        <img src="/images/wechat.jpg" class="ui rounded image" alt="" style="width: 110px">
+                        <img src="../../static/images/wechat.jpg" th:src="@{/images/wechat.jpg}" class="ui rounded image" alt="" style="width: 110px">
                     </div>
                 </div>
             </div>
