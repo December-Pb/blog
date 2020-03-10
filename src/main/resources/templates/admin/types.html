@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.w3.org/1999/xhtml">
+<head th:replace="admin/_fragments :: head(~{::title})">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Category</title>
+</head>
+<body>
+<nav th:replace="admin/_fragments :: menu(2)" class="ui inverted attached segment m-padded-tb-mini m-shadow-small"></nav>
+
+<div class="ui attached pointing menu">
+    <div class="ui container">
+        <div class="right menu">
+            <a href="#" class="item">Post</a>
+            <a href="#" class="teal active item">List</a>
+        </div>
+    </div>
+</div>
+
+<div class="m-padded-tb-big m-container-small">
+    <div class="ui container">
+        <div class="ui mini negative message" th:unless="${#strings.isEmpty(message)}">
+            <i class="class close icon"></i>
+            <div class="header">Tips:</div>
+            <p th:text="${message}">Congratulations!</p>
+        </div>
+        <table class="ui celled table">
+            <thead>
+            <tr>
+                <th></th>
+                <th>Name</th>
+                <th>Option</th>
+            </tr>
+            </thead>
+            <tbody>
+            <tr th:each="type, iterStat : ${page.content}">
+                <td th:text="${iterStat.count}">1</td>
+                <td th:text="${type.name}">刻意练习清单刻意练习清单</td>
+                <td>
+                    <a href="#" th:href="@{/admin/types/{id}/input(id=${type.id})}" class="ui mini teal basic button">Edit</a>
+                    <a href="#" th:href="@{/admin/types/{id}/delete(id=${type.id})}"class="ui mini red basic button">Delete</a>
+                </td>
+            </tr>
+            </tbody>
+            <tfoot>
+            <tr>
+                <th colspan="6">
+                    <div class="ui mini pagination menu" th:if="${page.totalPages}>1">
+                        <a th:href="@{/admin/types/(page=${page.number}-1)}" class="item" th:unless="${page.first}">Before</a>
+                        <a th:href="@{/admin/types/(page=${page.number}+1)}" class="item" th:unless="${page.last}">Next</a>
+                    </div>
+                    <a href="#" th:href="@{/admin/types/input}" class="ui mini right floated teal basic button">New</a>
+                </th>
+            </tr>
+            </tfoot>
+        </table>
+    </div>
+</div>
+
+<footer th:replace="_fragments :: footer" class="ui inverted vertical segment m-padded-tb-massive"></footer>
+<!--/*/<th:block th:replace="_fragments :: script">/*/-->
+<!--/*/</th:block>/*/-->
+
+<script>
+    $('.menu.toggle').click(function () {
+        $('.m-item').toggleClass('m-mobile-hide');
+    });
+    $('.ui.dropdown').dropdown({
+        on : 'hover'
+    });
+
+    $('.message.close')
+    .on('click', function() {
+        $(this)
+        .closest('.message')
+        .transition('fade');
+    });
+</script>
+</body>
+</html>

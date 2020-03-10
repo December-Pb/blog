@@ -6,12 +6,12 @@ import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PathVariable;
 
-@Controller
+//@Controller
 public class IndexController {
 
-    @GetMapping("/")
+//    @GetMapping("/admin")
     public String index() {
-        return "blog";
+        return "admin/blog-input";
     }
 
 }
